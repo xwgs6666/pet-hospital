@@ -1,0 +1,48 @@
+<!--miniprogram/pages/home/home.wxml-->
+<swiper class="lb"
+indicator-dots
+indicator-color="white"
+indicator-active-color="tomato"
+autoplay
+interval="6000"
+circular
+>
+  <swiper-item>
+    <image src="cloud://cloud-yxw-84i8k.636c-cloud-yxw-84i8k-1303001629/swiper/7.jpg" class="image "  bindtap="_handlerTap"/>
+  </swiper-item>
+    <swiper-item>
+    <image src="cloud://cloud-yxw-84i8k.636c-cloud-yxw-84i8k-1303001629/swiper/8.jpg" class="image "></image>
+  </swiper-item>
+    <swiper-item>
+    <image src="cloud://cloud-yxw-84i8k.636c-cloud-yxw-84i8k-1303001629/swiper/9.jpg" class="image "></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="cloud://cloud-yxw-84i8k.636c-cloud-yxw-84i8k-1303001629/swiper/10.jpg" class="image "></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="cloud://cloud-yxw-84i8k.636c-cloud-yxw-84i8k-1303001629/swiper/11.jpg" class="image "></image>
+  </swiper-item>
+</swiper>
+
+<view>
+<block wx:for="{{goodsShowList}}" wx:key="this">
+    <view class="item">
+           <image src="{{item.detail.goodsPic}}" style="width:150rpx;height:150rpx">
+           </image>
+        <view>
+           <view>套餐名称：{{item.detail.goodsName}}</view>
+           <view>服务价格为：{{item.detail.goodsPrice}}</view>
+           <view>套餐属性：{{item.detail.goodsDec}}</view>
+           <view>
+            收藏:<image style="width:18px;height:18px" src="cloud://cloud-yxw-84i8k.636c-cloud-yxw-84i8k-1303001629/heart/heart_{{item.isLove?1:0}}.jpg"
+               bindtap="toLove" data-id="{{index}}" >
+            </image>
+            订单添加:<image style="width:18px;height:18px" src="cloud://cloud-yxw-84i8k.636c-cloud-yxw-84i8k-1303001629/car/car_{{item.isCart?1:0}}.jpg"
+               bindtap="toCart" data-id="{{index}}" >
+            </image>
+            </view>
+        </view>
+    </view>
+    </block>
+</view>
+

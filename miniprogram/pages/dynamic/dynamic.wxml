@@ -1,0 +1,51 @@
+<!--miniprogram/pages/dynamic/dynamic.wxml-->
+<!-- <text>你负责健康就好。我负责守护你的快乐和健康</text>
+<txv-video vid="u3152yli5cf" playerid="txv1"></txv-video>
+<text>不要轻易养狗狗，因为你们会相互离不开。人可能会因为不爱你了，而离开你，但狗狗不会。</text>   
+<txv-video vid="b31522nssxx" playerid="txv2"></txv-video>
+<text>我觉得，养狗狗最幸福的事情，就是那种你有被需要的感觉，和狗狗暖心的陪伴</text>
+<txv-video vid="i3152tbam3f" playerid="txv3"></txv-video>
+<text>我觉得 养狗狗最幸福的事情，就是那种你有被需要的感觉，和狗狗暖心的陪伴</text>
+<txv-video vid="m3152iu2708" playerid="txv4"></txv-video>    -->
+
+  <view class="video1">
+    <view class="v1">
+      <txv-video vid="u3152yli5cf" playerid="txv1"></txv-video>
+    </view>
+    <view class="t1">
+      <text>你负责健康就好。我负责守护你的快乐和健康</text>
+    </view>
+    <view class="divLine"></view>
+  </view>
+
+  <view class="video2">
+    <view class="v2">
+      <txv-video vid="b31522nssxx" playerid="txv2"></txv-video>
+    </view>
+    <view class="t2">
+      <text>不要轻易养狗狗，因为你们会相互离不开</text>
+    </view>
+    <view class="divLine"></view>
+  </view>
+
+  <view class="video3">
+    <view class="v3">
+      <txv-video vid="i3152tbam3f" playerid="txv3"></txv-video>
+    </view>
+    <view class="t3">
+      <text>我觉得，养狗狗最幸福的事情，就是那种你有被需要的感觉，和狗狗暖心的陪伴</text>
+    </view>
+    <view class="divLine"></view>
+  </view>
+
+  <view class="video4">
+    <view class="v4">
+      <txv-video vid="m3152iu2708" playerid="txv4"></txv-video>
+    </view>
+    <view class="t4">
+      <text>我陪伴你长大，你陪伴我生活</text>
+    </view>
+    <view class="divLine"></view>
+  </view>
+
+

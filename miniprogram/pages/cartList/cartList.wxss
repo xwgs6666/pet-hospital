@@ -1,0 +1,22 @@
+/* miniprogram/pages/cartList/cartList.wxss */
+.item{
+  margin:15px;
+  border-bottom:1px solid #eeeeee
+}
+.goodsInfo,.total{
+  display:flex;
+}
+.total{
+  justify-content:space-between;
+  padding:3px;
+}
+.allTotal{
+  width:100px;
+  height:50px;
+  text-align:center;
+  background-color:orangered;
+  color:white;
+  font-weight:bolder;
+  position:fixed;
+  bottom:0px;
+}

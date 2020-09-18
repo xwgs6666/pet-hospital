@@ -1,0 +1,32 @@
+<!--miniprogram/pages/cartList/cartList.wxml-->
+<view>
+    <block wx:for="{{goodsCartList}}" wx:key="this">
+      <view class="item">
+        <view class="goodsInfo">
+             <image style="width:80px;height:80px" src="{{item.detail.goodsPic}}">
+             </image>
+             <view class="detail">
+                 <view>套餐名称：{{item.detail.goodsName}}</view>
+                 <view>服务价格：{{item.detail.goodsPrice}}</view>
+                 <view>套餐属性：{{item.detail.goodsDec}}</view>
+             </view>
+        </view>
+        <view class="total">
+              <view>小计:{{item.detail.goodsPrice*item.count}}</view>
+              <view>
+                套餐周期数：
+                  <button bindtap="oper" data-type="+" data-index="{{index}}" size="mini">
+                      +
+                  </button>
+                  <text>{{item.count}}</text>
+                  <button bindtap="oper" data-type="-" data-index="{{index}}" size="mini">
+                      -
+                  </button>
+              </view>
+        </view>
+      </view>
+    </block>
+    <view class="allTotal">
+      总计：{{allTotal}}
+    </view>
+</view>

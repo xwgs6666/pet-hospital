@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/dynamic/dynamic",
+    "pages/cartList/cartList"
+
+  ],
+  "window": {
+    "backgroundColor": "#0094ff",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/shouye1.png",
+        "selectedIconPath": "images/shouye-yes.png"
+      },
+      {
+        "pagePath": "pages/dynamic/dynamic",
+        "text": "动态",
+        "iconPath": "images/dongtai.png",
+        "selectedIconPath": "images/dongtai1.png"
+      },
+      {
+        "pagePath": "pages/cartList/cartList",
+        "text": "我的订单",
+        "iconPath": "images/dingdan.png",
+        "selectedIconPath": "images/dingdan1.png"
+      }
+    ]
+  },
+  "plugins": {
+    "tencentvideo": {
+      "version": "1.3.16",
+      "provider": "wxa75efa648b60994b"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
